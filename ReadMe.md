@@ -4,19 +4,23 @@ Domani è il compleanno di Silvia e non le ho ancora comprato nulla! Mi piacereb
 
 ## A disposizione:
 - lista possibili regali (lampada, penna stilografica, libro)
-- tempo a disposizione ----> PRIME
+- tempo a disposizione
+- tempo di consegna
 - budget
-- carrello
+-prezzo atricolo
+
 
 # Algoritmo:
-PER OGNI possibile regalo della lista
-    SE prezzo articolo < = budget AND tempo di consegna < = tempo a disposizione 
-        aggiungi al carrello
 
-
-SE prezzo lampada <= budget AND tempo di consegna < = tempo a disposizione 
+SE prezzo lampada <= budget AND tempo di consegna < = tempo a disposizione:
     acquista lampada
-ALTRIMENTI SE prezzo penna stilografica <= budget and tempo di consegna < = tempo a disposizione 
-    acquista  penna stilografica
-ALTRIMENTI prezzo libro <= budget and tempo di consegna < = tempo a disposizione 
-    acquista libro
+ALTRIMENTI PER OGNI penna stilografica:
+    SE prezzo penna stilografica <= budget and tempo di consegna < = tempo a disposizione 
+        acquista  penna stilografica 
+
+ALTRIMENTI PER OGNI libro:
+    SE prezzo libro <= budget and tempo di consegna < = tempo a disposizione 
+        acquista libro
+    
+    ALTRIMENTI:
+    compra buono Feltrinelli
